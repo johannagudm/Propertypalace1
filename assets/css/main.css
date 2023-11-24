@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F5F5F6;
+  font-family: sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.max-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-container {
+  background-color: white;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav .left-side, nav .right-side, nav #menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+nav .left-side a, nav .right-side a, nav #menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav .left-side a.active, nav .right-side a.active, nav #menu a.active {
+  border-bottom: 3px solid black;
+}
+nav .left-side .logo, nav .right-side .logo, nav #menu .logo {
+  max-width: 100px;
+}
+nav .hamburger {
+  width: 30px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+nav .hamburger .slice {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: black;
+}
+
+.hero-image-container {
+  position: relative;
+  z-index: 0;
+}
+.hero-image-container .hero-image {
+  padding: 200px 100px;
+  background-image: url("../img/pexels-pixabay-269077.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-image-container .hero-info {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image-container .hero-info span {
+  background-color: rgba(0, 101, 224, 0.75);
+  padding: 10px 25px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+.hero-image-container.subpage .hero-image {
+  padding: 100px 50px;
+}
+
+.company-info strong {
+  font-size: 24px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.company-info p {
+  margin-bottom: 25px;
+}
+
+.contact-us form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-us form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.contact-us form .input-group label {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.contact-us form .input-group input, .contact-us form .input-group textarea {
+  font-size: 16px;
+  padding: 10px;
+  font-family: sans-serif;
+  resize: none;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.employees-container {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.employees-container header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.employees-container header .see-more-btn {
+  padding: 10px 25px;
+  border-radius: 50px;
+  background-color: #0065e0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 22px;
+}
+.employees-container .employees {
+  display: flex;
+  justify-content: space-between;
+}
+.employees-container .employees .card {
+  width: calc(25% - 16.6666666667px);
+  background-color: white;
+}
+.employees-container .employees .card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.employees-container .employees .card .info .name {
+  font-weight: bold;
+}
+.employees-container .employees .card .info .title {
+  color: gray;
+}
+.employees-container .employees .card .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.employees-container .employees .card .contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.properties-container {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.properties-container header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.properties-container header .see-more-btn {
+  padding: 10px 25px;
+  border-radius: 50px;
+  background-color: #0065e0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 22px;
+}
+.properties-container .properties {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.properties-container .properties .card {
+  width: calc(33.3333333333% - 20px);
+  background-color: white;
+}
+.properties-container .properties .card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.properties-container .properties .card .info .name {
+  font-weight: bold;
+}
+.properties-container .properties .card .info .title {
+  color: gray;
+}
+.properties-container .properties .card .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.properties-container .properties .card .contact a {
+  color: black;
+  text-decoration: none;
+}
+.properties-container .properties .card .details {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid gainsboro;
+}
+.properties-container .properties .card .details .detail {
+  width: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  border-right: 1px solid gainsboro;
+  font-size: 12px;
+  font-weight: bold;
+}
+.properties-container .properties .card .details .detail:last-child {
+  border-right: 0;
+}
+
+footer {
+  background-color: #0065e0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .right-side {
+  display: flex;
+  gap: 50px;
+}
+footer .footer-content .footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-content .footer-column a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-content .footer-column .footer-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+footer .logo {
+  max-width: 100px;
+}
+
+.submit-btn {
+  max-width: 300px;
+  font-weight: bold;
+  background-color: #0065e0;
+  border: 1px solid #004ead;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  color: white;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #147eff;
+  border: 1px solid #0070fa;
+}
+
+@media screen and (max-width: 768px) {
+  .employees-container header .section-title {
+    font-size: 24px;
+    line-height: 42px;
+  }
+  .employees-container .employees {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .employees-container .employees .card {
+    width: 100%;
+    display: flex;
+  }
+  .employees-container .employees .card .card-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .employees-container .employees .card .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .employees-container .employees .card .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+  }
+  .employees-container .employees .card .info .name {
+    font-weight: bold;
+  }
+  .employees-container .employees .card .info .title {
+    color: gray;
+  }
+  .employees-container .employees .card .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+  }
+  .employees-container .employees .card .contact a {
+    color: black;
+    text-decoration: none;
+  }
+  .properties-container header .section-title {
+    font-size: 24px;
+    line-height: 42px;
+  }
+  .properties-container .properties {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .properties-container .properties .card {
+    width: 100%;
+  }
+  footer .footer-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer .footer-content .right-side {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 524px) {
+  body {
+    padding-top: 120px;
+  }
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .nav-container nav #menu {
+    position: fixed;
+    left: 100vw;
+    width: 100vw;
+    top: 120px;
+    z-index: 1;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  .nav-container nav #menu.show {
+    display: flex;
+    left: 0;
+  }
+  .nav-container nav .hamburger {
+    display: flex;
+  }
+  .submit-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}

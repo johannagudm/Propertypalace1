@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Palace</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="nav-container">
+        <nav class="max-content">
+            <div class="left-side">
+                <a href="/">
+                    <img class="logo" src="./assets/blue-logo.png" alt="Property Palace">
+                </a>
+
+                <div id="menu">
+                    <a href="/properties.html">Properties</a>
+                    <a href="/aboutus.html">About Us</a>
+                    <a class="active" href="/aboutus.html#contact">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="hamburger" onclick="document.getElementById('menu').classList.toggle('show');">
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="max-content hero-image-container subpage">
+            <div class="hero-info">
+                <span>Contact Us</span>
+            </div>
+            <div class="hero-image"></div>
+        </section>
+
+        
+        
+        <section class="max-content employees-container">
+            <header>
+                <span class="section-title">Employees</span>
+            </header>
+            <div class="employees">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/img/staff/pexels-andrea-piacquadio-774909.jpg" alt="">
+                    </div>
+    
+                    <div class="info-container">
+                        <div class="info">
+                            <span class="name">Stacy Watts</span>
+                            <span class="title">Real Estate Agent</span>
+                        </div>
+        
+                        <div class="contact">
+                            <a href="tel:99999999">99 99 99 99</a>
+                            <a href="mailto:stacy.watts@fake.fake">stacy.watts@fake.fake</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/img/staff/pexels-daniel-xavier-1239291.jpg" alt="">
+                    </div>
+    
+                    <div class="info-container">
+                        <div class="info">
+                            <span class="name">Andrea Bishop</span>
+                            <span class="title">Real Estate Agent</span>
+                        </div>
+        
+                        <div class="contact">
+                            <a href="tel:99999999">99 99 99 99</a>
+                            <a href="mailto:andrea.bishop@fake.fake">andrea.bishop@fake.fake</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/img/staff/pexels-justin-shaifer-1222271.jpg" alt="">
+                    </div>
+    
+                    <div class="info-container">
+                        <div class="info">
+                            <span class="name">Andre Wheeler</span>
+                            <span class="title">Real Estate Agent</span>
+                        </div>
+        
+                        <div class="contact">
+                            <a href="tel:99999999">99 99 99 99</a>
+                            <a href="mailto:andre.wheelery@fake.fake">andre.wheelery@fake.fake</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/img/staff/pexels-pixabay-220453.jpg" alt="">
+                    </div>
+    
+                    <div class="info-container">
+                        <div class="info">
+                            <span class="name">Charlie Perry</span>
+                            <span class="title">Real Estate Agent</span>
+                        </div>
+        
+                        <div class="contact">
+                            <a href="tel:99999999">99 99 99 99</a>
+                            <a href="mailto:charlie.perry@fake.fake">charlie.perry@fake.fake</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-us-container">
+            
+            <div class="contact-us max-content">
+                <header>
+                    <span class="section-title">Contact Us</span>
+                </header>
+                <form action="">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name...">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email...">
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Your subject...">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+                    </div>
+
+                    
+                    <div class="input-group">
+                        <input class="submit-btn" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-content max-content">
+            <div class="left-side">
+                <div class="footer-column">
+                    <img src="./assets/white-logo.png" alt="Logo" class="logo">
+                    <span class="footer-title">Property Palace</span>
+                    <a href="">653 Lakeview St</a>
+                    <a href="">99 99 99 99</a>
+                    <a href="mailto:">property.palace@fake.fake</a>
+                    <a href="/">Facebook</a>
+                </div>
+            </div>
+            
+    
+            <div class="right-side">
+                <div class="footer-column">
+                    <span class="footer-title">Listings</span>
+                    <a href="/properties.html">Properties</a>
+                </div>
+        
+                <div class="footer-column">
+                    <span class="footer-title">The Company</span>
+                    <a href="/aboutus.html">About Us</a>
+                    <a href="/contactus.html">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
